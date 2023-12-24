@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish E-commerce Website | E-commerce Stylish</title>
+    <!-- Home Css  -->
+    <link rel="stylesheet" href="Home.css">
+    <!-- Responsive Css  -->
+    <link rel="stylesheet" href="Responsive-home.css">
+    <!-- Home Javascript  -->
+    <script defer src="Home.js"></script>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- changeBg overlay -->
+    <div class="changeBg"></div>
+
+    <!-- loader animation  -->
+    <div id="loader">
+        <img src="Images/Pre-loader.gif" alt="">
+    </div>
+
+    <!-- ============== Starting Header Section ============= -->
+    <div class="Header" id="Header">
+        <div class="hamburger">
+            <i id="bar" class="fa-solid fa-bars bar"></i>
+        </div>
+
+        <ul class="list-items">
+
+            <div class="main-items">
+                <li><a href="#" class="active-link">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="icons">
+                <div class="cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping" id="Cart-icon"></i>
+                    <div class="cartItemsNumber">0</div>
+                </div>
+                <i class="fa-solid fa-right-to-bracket login-icon" id="account-btn"></i>
+                <div class="user-profile">A</div>
+            </div>
+            <!-- CartArea -->
+            <div class="cartArea-container">
+                <div class="cartArea">
+                    <i class="fa-solid fa-xmark cartArea-cross-icon cross-icon"></i>
+                    <div class="cart-heading">Your cart is empty</div>
+                    <div class="cart-container">
+
+                    </div>
+                    <div class="cart-action-buttons">
+                        <div class="clear-cart-btn">
+                            <button>Clear cart</button>
+                        </div>
+                        <div class="buy-cart-btn">
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+                    <div class="total-price-container">
+                        <div class="total-price-text">Total</div>
+                        <div class="total-price-value">00</div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+
+
+        <div class="header-logo">
+            <img src="Images/dev-logo.png" alt="">
+        </div>
+    </div>
+    <!-- ============== Ending Header Section  =============-->
+
+    <!-- Account box  -->
+    <form onsubmit="return accountBoxValidation(event)" method="post" class="account-box-container">
+        <div class="account-box">
+            <i class="fa-solid fa-xmark account-box-cross-icon icon cross-icon"></i>
+            <span class="user-error error-message"></span>
+            <div class="input-boxes user">
+                <input class="user-input" type="text" placeholder="User Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="email-error error-message"></span>
+            <div class="input-boxes email">
+                <input class="email-input" type="email" placeholder="E-mail" required>
+                <i class="fa-solid fa-square-envelope"></i>
+            </div>
+            <span class="passoword-error error-message"></span>
+            <div class="input-boxes passoword">
+                <input class="passoword-input" type="password" placeholder="Passoword" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <span class="confirmPassoword-error error-message"></span>
+            <div class="input-boxes confirmPassoword">
+                <input class="confirmPassoword-input" type="password" placeholder="Confirm passoword" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="create-btn">
+                <button>Create</button>
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- ========= === Starting Hero Section ==== ==== ==  -->
+    <section id="hero">
+        <div class="hero-text">
+            <h5>Trade-in-offer</h6>
+                <h1>Super value deals <br> <span> On all products </span> </h1>
+                <p>Save more with coupns & up to 70% off</p>
+                <div class="hero-btn">
+                    <button>Shop Now</button>
+                </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="Images/hero4.png" alt="">
+        </div>
+    </section>
+    <!-- ========= === Ending Hero Section ==== ==== ==  -->
+
+
+
+
+    <!-- Starting Man Section  -->
+    <section id="man">
+        <div class="man-items first">
+            <img src="Images/featured-images/f-man-1.png">
+            <h4>free shoping</h4>
+        </div>
+
+        <div class="man-items second">
+            <img src="Images/featured-images/f-man-2.png">
+            <h4>online order</h4>
+        </div>
+
+        <div class="man-items third">
+            <img src="Images/featured-images/f-man-3.png">
+            <h4>save money</h4>
+        </div>
+
+        <div class="man-items fourth">
+            <img src="Images/featured-images/f-man-4.png">
+            <h4>promotions</h4>
+        </div>
+
+        <div class="man-items fifth">
+            <img src="Images/featured-images/f-man-5.png">
+            <h4>happy sell</h4>
+        </div>
+
+        <div class="man-items sixth">
+            <img src="Images/featured-images/f-man-1.png">
+            <h4>f24/7 support</h4>
+        </div>
+
+
+    </section>
+    <!-- Ending Man Section  -->
+
+
+
+
+    <!--======== ====== Starting Featured Products Section ======== ====== -->
+    <section id="featured-products">
+
+        <h2 class="f-main-heading">Featured Products</h2>
+        <p class="f-main-para">summer collection new modern design</p>
+
+        <div class="product">
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-1.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>cartoon astronaut t-shirt</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$143</h3>
+                </div>
+                <i class="fa-sharp fa-solid  fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-2.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Stylish branded T-shirt</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$193</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-3.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>T-shirt with Green - white color.</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$98</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-4.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Girls brown T-shirt</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$79</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-5.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Girls stylish pajama</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$299</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-6.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Boys fancy shirt in orange - white color</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$329</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-7.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Blue t-shirt with stars for boys</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$178</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/f-product-8.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Boys t-shirt in white color</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$342</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="off-banner">
+            <h4>repair service</h4>
+            <h2>up to <span>70% off</span>-all-shirts & accessories</h2>
+            <button class="explore">Explore More</button>
+        </div>
+
+
+        <!-- New feature  -->
+        <div class="sec-fe-heading">
+            <h2 class="f-main-heading">new arriavals</h2>
+            <p class="f-main-para">summer collection new modern design</p>
+        </div>
+
+        <div class="product">
+            <div class="product-items second">
+                <div class="product-image"><img src="Images/featured-images/n1.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Shirt for mens in white color</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$322</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n2.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Men's stylish new shirt</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$492</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n3.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Shirt in white color</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$292</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n4.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Half shirt for men's</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$502</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n5.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Blue shirt for men's</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$199</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n6.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Stylish paint with belt for men's</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$398</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n7.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Shirt with gray color men's</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$593</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+            <div class="product-items">
+                <div class="product-image"><img src="Images/featured-images/n8.jpg" alt=""></div>
+                <div class="product-main-text">
+                    <p>aadidas</p>
+                    <h4>Black color shirt only for men's</h4>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <i class="fa-sharp fa-solid fa-star star"></i>
+                    <h3>$499</h3>
+                </div>
+                <i class="fa-sharp fa-solid fa-cart-shopping cart"></i>
+            </div>
+
+
+        </div>
+
+
+        <div id="banner-section">
+            <div class="banner-parent">
+
+                <div class="banner one">
+                    <div class="bann-image">
+                        <img src="Images/featured-images/b-2.jpg" alt="">
+                    </div>
+
+                    <div class="bann-text">
+                        <h3>crazy deals</h3>
+                        <h2 class="b-detail">buy 1 get 1 free</h2>
+                        <p>The best classical dresses is on sale at cara</p>
+                        <button class="bann-btn">Learn more</button>
+                    </div>
+                </div>
+
+
+                <div class="banner three">
+                    <div class="bann-image">
+                        <img src="Images/featured-images/b-3.jpg" alt="">
+                    </div>
+
+                    <div class="bann-text">
+                        <h3>spring/summer</h3>
+                        <h2 class="b-detail">upcomming season</h2>
+                        <p>The best classical dresses is on sale at cara</p>
+                        <button class="bann-btn">Learn more</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- banner image  -->
+            <div class="banner-image-parent">
+                <div class="banner-image one">
+                    <div class="b-image">
+                        <img src="Images/featured-images/b-img-1.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+                        <h2>seasonal sale</h2>
+                        <h1>winter season 50% 0ff</h1>
+                    </div>
+                </div>
+
+                <div class="banner-image two">
+                    <div class="b-image">
+                        <img src="Images/featured-images/b-img-2.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+                        <h2>new footewear collection</h2>
+                        <h1>spring / summer 2023</h1>
+                    </div>
+                </div>
+
+                <div class="banner-image three">
+                    <div class="b-image">
+                        <img src="Images/featured-images/b-img-3.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+                        <h2>tshirts</h2>
+                        <h1>designed and professional </h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--======== ====== Ending Featured Products Section ======== ====== -->
+
+
+
+
+
+
+
+    <!-- === ======== Starting Footer Section ======= === ==   -->
+    <footer>
+        <div class="main-footer">
+            <div class="top-footer">
+                <div class="contact t-f">
+                    <div class="c-logo"><img src="images/logo.png" alt=""></div>
+                    <h4 class="c-heading">Contact</h4>
+                    <li><span class="location">Address:</span> <span class="detail">Nabinagar road amba (aurangabad),
+                            (bihar)</span> </li>
+                    <li><span class="location">Phone:</span> <span class="detail">9155333590 / 9503821037</span></li>
+                    <li><span class="location"> Hours: </span><span class="detail">10.00 - 18.00 Mon - Sat</span></li>
+                    <h3>Follow Us</h3>
+                    <div class="follow-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </div>
+                    <div class="company-img"></div>
+                </div>
+
+
+
+                <div class="about t-f">
+                    <h4 class="c-heading">About</h4>
+                    <li> <span class="detail">About us</span> </li>
+                    <li> <span class="detail">Delievery Information</span></li>
+                    <li> <span class="detail">Privicy policy</span></li>
+                    <li> <span class="detail">Terms and conditions</span></li>
+                    <li> <span class="detail">Contact us</span></li>
+                </div>
+
+
+                <div class="my-about t-f">
+                    <h4 class="c-heading">My Account</h4>
+                    <li> <span class="detail"> Sign In </span> </li>
+                    <li><span class="detail">View Cart</span></li>
+                    <li><span class="detail">My Wishlist</span></li>
+                    <li><span class="detail">Track My Order</span></li>
+                    <li><span class="detail">Help</span></li>
+                </div>
+
+            </div>
+
+
+
+            <div class="center-footer">
+                <div class="text">
+                    <h3>Sign up for Newsletters</h3>
+                    <p>get emails updates about our latest shop and <span>special offeres</span></p>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Your email address"><span>Sign Up</span>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="bottom-footer">
+            <p>&copy; copyright designed and developed by developer aman raj from aurangabad, (bihar)</p>
+        </div>
+    </footer>
+    <!-- === ======== Ending Footer Section ======= === ==   -->
+
+
+
+
+</body>
+
+</html>
